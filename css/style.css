@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&family=Merriweather:wght@300;400;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Tajawal', sans-serif;
+    line-height: 1.5;
+    background-color: #F4ECDF;
+    font-size: 16px;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+}
+
+/* small screen */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+
+}
+
+/* madium screen */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+
+    }
+}
+
+/* large screen */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+
+    }
+}
+
+.container {
+    margin: auto;
+}
+
+/*start header */
+.header {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+
+}
+
+@media (max-width: 767px) {
+    .header .container {
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+}
+
+.header .container .logo {
+    display: flex;
+    margin-right: 50px;
+    align-items: center;
+}
+
+.header .container .logo .image {
+    width: 50px;
+    margin-right: 20px;
+
+}
+
+.header .container .logo .image img {
+    width: 100%;
+
+}
+
+.header .container .logo h1 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+    font-size: 3em;
+}
+
+.header .container nav {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    .header .container nav {
+        display: none;
+    }
+
+}
+
+.header .container nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+
+}
+
+.header .container nav ul li a {
+    text-decoration: none;
+    color: #555;
+    padding: 7px 15px;
+}
+
+.header .container nav ul li a:hover {
+    color: crimson;
+    border-radius: 30px 90px 100px 70px;
+    border: 1px solid crimson;
+}
+
+.header .container nav .nav-icons i:not(:first-child) {
+    padding: 18px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #555;
+    color: #F4ECDF;
+}
+
+.header .container nav .nav-icons i:first-of-type {
+    margin: 0 50px;
+    color: #777;
+
+
+}
+
+.header .container nav .nav-icons i:nth-of-type(2) {
+
+    background-color: #F43127;
+
+
+}
+
+.header .container nav .nav-icons i:last-of-type {
+
+    background-color: #FCB302;
+
+}
+
+.header .container nav .nav-icons span {
+
+    margin-right: 25px;
+    margin-left: 25px;
+
+}
+
+.header .container .bar {
+    padding: 5px;
+    border: 1px solid #555;
+    height: 31px;
+    border-radius: 2px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .header .container .bar {
+        display: block;
+    }
+
+}
+
+.header .container .bar span {
+    display: block;
+    width: 20px;
+    height: 3px;
+    background-color: #777;
+}
+
+.header .container .bar span:not(:last-child) {
+
+    margin-bottom: 5px;
+
+}
+
+/*end header */
+/* start main */
+main {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+main .container .content {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+@media (max-width: 768px) {
+    main .container .content {
+        flex-direction: column-reverse;
+        
+
+    }
+
+}
+
+main .container .content>.text {
+    width: 50%;
+}
+
+@media (max-width: 768px) {
+    main .container .content .text {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+}
+
+main .container .content>.text p:first-of-type {
+    background-color: #F43127;
+    padding: 5px 15px;
+    width: fit-content;
+    color: #F4ECDF;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {}
+
+main .container .content>.text h2 {
+
+    font-size: 5rem;
+    line-height: 1.2;
+    font-family: 'Merriweather', serif;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 768px) {
+    main .container .content>.text h2 {
+
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+}
+
+main .container .content>.text p:last-of-type {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    main .container .content>.text p:last-of-type {
+        text-align: center;
+    }
+
+}
+
+
+main .container .content>.text a {
+    font-size: 1.3rem;
+    background-color: #FCB302;
+    color: #F4ECDF;
+    text-decoration: none;
+    padding: 7px 15px;
+    border-radius: 30px;
+
+}
+
+@media (max-width: 768px) {
+    main .container .content>.text a {
+        text-align: center;
+    }
+}
+
+main .container .content>.text a i {
+
+     margin-left: 25px;
+
+}
+
+ main .container .content>.image {
+        width: 30%;
+    }
+
+@media (max-width: 768px) {
+    main .container .content .image {
+        width: 100%;
+    }
+}
+
+
+    main .container .content>.image img {
+        width: 100%;
+    }
+
+    main .container section:last-child {
+        display: flex;
+        flex-wrap: wrap;
+
+        background-color: #F9F4EC;
+        padding: 15px;
+        border-radius: 30px;
+        margin-top: 50px;
+        justify-content: space-around;
+
+    }
+
+    @media (max-width: 768px) {
+        main .container section:last-child {
+            background: none;
+        }
+
+    }
+
+    main .container .image-box .image {
+        width: 150px;
+        height: 150px;
+        padding: 20px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media (max-width: 768px) {
+        main .container .image-box .image {
+            background-color: #F9F4EC;
+            margin-bottom: 20px;
+        }
+    }
+
+    main .container .image-box .image img {
+        width: 70%;
+    }
+
+main .container .image-box .image h6 {
+        font-size: 1.2rem;
+        margin-top: 10px;
+        color: #333;
+}
+
+/*end main */
+    footer{
+        text-align: center;
+        background-color: #d6c9b3;
+        padding: 10px;
+        font-size: 1.5rem;
+        color: #777;
+    }
